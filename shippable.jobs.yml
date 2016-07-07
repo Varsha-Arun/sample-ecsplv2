@@ -3,6 +3,8 @@ jobs:
     type: manifest
     steps:
       - GET: ugee-img1
+      - GET: ugee-param1
+      - GET: ugee-dopt1
       - GET: triggertwo
       
   - name: ugee-manifest2
