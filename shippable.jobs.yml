@@ -5,6 +5,7 @@ jobs:
       - GET: ugee-img1
       - GET: ugee-param2
       - GET: ugee-dopt2
+      - GET: ugee-replica3
       - GET: triggertwo
       
   - name: ugee-manifest2
