@@ -18,7 +18,7 @@ jobs:
   - name: ugee-manifest3
     type: manifest
     steps:
-      - GET: ugee-img2
+      - GET: ugee-img1
       - GET: ugee-manifest1
       
   - name: ugee1-ecsdeploy
