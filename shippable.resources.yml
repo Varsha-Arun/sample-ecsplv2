@@ -1,6 +1,6 @@
 resources:
       
-  - name: ship-img1
+  - name: ugee-img1
     type: image
     integration: cock1-hub
     source:
@@ -8,7 +8,7 @@ resources:
       isPull: false
       tag: "deploy.4"
       
-  - name: ship-img2
+  - name: ugee-img2
     type: image
     integration: cock1-hub
     source:
@@ -16,42 +16,52 @@ resources:
       isPull: false
       tag: "deploy.5"
       
- # - name: ship-dclcluster1
-  #  type: dclCluster
-   # integration: varsha-dcl
-    #source:
-     #name : "test-node"
+  - name: ugee-img3
+    type: image
+    integration: cock1-hub
+    source:
+      name: "shiphitchcock1/betaci_nod_limitless_pl"
+      isPull: false
+      tag: "pipeline.7"
      
-  #- name: ship-ecscluster1
-   # type: ecsCluster
-    #integration: varsha-ecscluster
-    #source:
-     # name : "testCL" #name of the cluster we are deploying
-      #region: "us-west-2"
+  - name: ugee-ecscluster
+    type: ecsCluster
+    integration: varsha-ecscluster
+    source:
+      name : "testCL" #name of the cluster we are deploying
+      region: "us-west-2"
       
- # - name: ship-param1
-  #  type: params
-   # source:
-    #  params:
-     #   api_url : "betaapi.shippable.co"
-      #  MONGO_API_URL: "localhost:28017"
+  - name: ugee-param1
+    type: params
+    source:
+      params:
+        api_url : "betaapi.shippable.co"
+        MONGO_API_URL: "localhost:28017"
         
- # - name: ship-param2
-  #  type: params
-   # source:
-    #  params:
-     #   foo: booo
-      #  api_url: https://api.shippable.co
+  - name: ugee-param2
+    type: params
+    source:
+      params:
+        foo: booo
+        api_url: https://api.shippable.co
         
-  #- name: ship-doption1
-   # type: dockerOptions
-    #source:
-     # memory: 128
-      #cpu-shares: 4
-      #portMappings:
-       # - 80:80
+  - name: ugee-dopt1
+    type: dockerOptions
+    source:
+      memory: 128
+      cpu-shares: 4
+      portMappings:
+        - 80:80
         
-#  - name: ship-replica1
- #   type: replicas
-  #  source:
-   #   count: 1
+  - name: ugee-dopt2
+    type: dockerOptions
+    source:
+      memory: 64
+      cpu-shares: 8
+      portMappings:
+        - 80:3000
+        
+  - name: ugee-replica2
+    type: replicas
+    source:
+      count: 2
