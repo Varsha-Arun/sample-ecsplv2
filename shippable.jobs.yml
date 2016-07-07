@@ -8,7 +8,7 @@ jobs:
   - name: woo-manifest2
     type: manifest
     steps:
-      - GET: woo-img1
+      - GET: woo-img2
       - GET: triggerwoo2
       
  # - name: woo-manifest2
