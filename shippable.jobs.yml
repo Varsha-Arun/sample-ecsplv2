@@ -1,21 +1,21 @@
 jobs:
-  - name: ugee-manifest1
+  - name: bgee-manifest1
     type: manifest
     steps:
-      - GET: ugee-img1
+      - GET: bgee-img1
       
-  - name: ugee-manifest2
+  - name: bgee-manifest2
     type: manifest
     steps:
-      - GET: ugee-img2
+      - GET: bgee-img2
       
-  - name: uge2-ecsdeploy
+  - name: bge2-ecsdeploy
     type: ecsDeploy
     options: 
-      deployMethod: upgrade
+      deployMethod: bluegreen
     steps:
-      - GET: ugee-manifest1
-      - GET: ugee-ecscluster1
+      - GET: bgee-manifest1
+      - GET: bgee-ecscluster1
     
   #- name: repo-dcldeploy
    # type: dclDeploy
