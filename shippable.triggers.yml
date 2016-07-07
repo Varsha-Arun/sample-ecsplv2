@@ -2,12 +2,12 @@ triggers:
   - name: triggerone
     type: trigger
     source:
-      message: 'testing ecs job trigger in yml'
+      message: 'testing ecs jobtrigger in yml'
       
   - name: triggertwo
     type: trigger
     source:
-      counter: 6
+      counter: 7
       
   - name: triggerthree
     type: trigger
