@@ -7,7 +7,7 @@ triggers:
   - name: triggertwo
     type: trigger
     source:
-      counter: 2
+      counter: 3
       
   - name: triggerthree
     type: trigger
