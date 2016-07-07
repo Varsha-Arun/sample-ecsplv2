@@ -18,6 +18,14 @@ jobs:
       - GET: triggerwoo3
       - GET: woo-replica0
       
+  - name: wooerrorhandlingport-manifest4
+    type: manifest
+    steps:
+      - GET: woo-img2
+      - GET: woo-dopt2
+      - GET: woo-replica3
+      - GET: triggerwoo2
+      
  # - name: woo-manifest2
   #  type: manifest
    # steps:
@@ -39,6 +47,12 @@ jobs:
     type: ecsDeploy
     steps:
       - GET: woo-mf3replica0
+      - GET: woo-ecscluster1
+      
+  - name: wooerrorinport-ecsdeploy
+    type: ecsDeploy
+    steps:
+      - GET: wooerrorhandlingport-manifest4
       - GET: woo-ecscluster1
     
   #- name: repo-dcldeploy
