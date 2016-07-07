@@ -15,7 +15,7 @@ jobs:
       deployMethod: upgrade
     steps:
       - GET: ugee-manifest1
-      - GET: ecs-ecscluster1
+      - GET: ugee-ecscluster1
     
   #- name: repo-dcldeploy
    # type: dclDeploy
