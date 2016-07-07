@@ -1,14 +1,21 @@
 jobs:
-  - name: ecs-manifest1
+  - name: ugee-manifest1
     type: manifest
     steps:
-      - GET: ecs-img1
-     
-#  - name: repo-ecsdeploy
- #   type: ecsDeploy
-  #  steps:
-   #   - GET: repo-manifest2
-    #  - GET: repo-ecscluster
+      - GET: ugee-img1
+      
+  - name: ugee-manifest2
+    type: manifest
+    steps:
+      - GET: ugee-img2
+      
+  - name: uge2-ecsdeploy
+    type: ecsDeploy
+    options: 
+      deployMethod: upgrade
+    steps:
+      - GET: ugee-manifest1
+      - GET: ecs-ecscluster1
     
   #- name: repo-dcldeploy
    # type: dclDeploy
