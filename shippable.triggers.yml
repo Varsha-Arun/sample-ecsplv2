@@ -12,4 +12,4 @@ triggers:
   - name: triggerwoo3
     type: trigger
     source:
-      message: 'testing job trigger in yml ecs replica0'
+      message: 'testing job trigger in yml ecs deploy with replica0'
