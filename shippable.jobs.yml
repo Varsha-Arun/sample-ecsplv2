@@ -12,6 +12,8 @@ jobs:
     type: manifest
     steps:
       - GET: ugee-img2
+      - GET: ugee-img3
+      - GET: triggerone
       
   - name: ugee1-ecsdeploy
     type: ecsDeploy
@@ -23,6 +25,13 @@ jobs:
       - GET: ugee-dopt1
       - GET: ugee-replica1
       - GET: ugee-ecscluster1
+      
+  - name: ugemulti-imagemanifestdeploy
+    type: ecsDeploy
+    options: 
+      deployMethod: upgrade
+    steps:
+      - GET: ugee-manifest2
     
   #- name: repo-dcldeploy
    # type: dclDeploy
