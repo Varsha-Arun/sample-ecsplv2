@@ -9,7 +9,7 @@ jobs:
     steps:
       - GET: bgee-img2
       
-  - name: bge2-ecsdeploy
+  - name: bgee1-ecsdeploy
     type: ecsDeploy
     options: 
       deployMethod: bluegreen
