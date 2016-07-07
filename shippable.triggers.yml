@@ -2,7 +2,7 @@ triggers:
   - name: triggerone
     type: trigger
     source:
-      message: 'testing ecsjob trigger in yml'
+      message: 'testing ecs job trigger in yml'
       
   - name: triggertwo
     type: trigger
