@@ -7,4 +7,4 @@ triggers:
   - name: triggerwoo2
     type: trigger
     source:
-      message: 'testing job trigger in yml'
+      message: 'testing jobtrigger in yml'
