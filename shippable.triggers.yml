@@ -17,4 +17,4 @@ triggers:
   - name: triggerwoo4
     type: trigger
     source:
-      message: 'testing job trigger in yml ecs deploy error handling for port'
+      message: 'testing job trigger in yml ecs deploy error handling for port number'
