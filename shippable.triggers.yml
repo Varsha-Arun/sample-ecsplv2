@@ -8,3 +8,8 @@ triggers:
     type: trigger
     source:
       message: 'testing job trigger in yml'
+      
+  - name: triggerwoo3
+    type: trigger
+    source:
+      message: 'testing job trigger in yml replica0'
