@@ -16,6 +16,7 @@ jobs:
     steps:
       - GET: woo-img2
       - GET: triggerwoo3
+      - GET: woo-replica0
       
  # - name: woo-manifest2
   #  type: manifest
