@@ -24,7 +24,7 @@ jobs:
       - GET: woo-img2
       - GET: woo-dopt2
       - GET: woo-replica3
-      - GET: triggerwoo2
+      - GET: triggerwoo4
       
  # - name: woo-manifest2
   #  type: manifest
