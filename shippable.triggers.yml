@@ -12,4 +12,4 @@ triggers:
   - name: triggerthree
     type: trigger
     source:
-      counter: 1
+      counter: 2
