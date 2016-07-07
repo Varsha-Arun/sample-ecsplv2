@@ -1,21 +1,19 @@
 jobs:
-  - name: bgee-manifest1
+  - name: woo-manifest1
     type: manifest
     steps:
-      - GET: bgee-img1
+      - GET: woo-img1
       
-  - name: bgee-manifest2
+  - name: woo-manifest2
     type: manifest
     steps:
-      - GET: bgee-img2
+      - GET: woo-img2
       
-  - name: bgee1-ecsdeploy
+  - name: woo-ecsdeploy
     type: ecsDeploy
-    options: 
-      deployMethod: bluegreen
     steps:
-      - GET: bgee-manifest1
-      - GET: bgee-ecscluster1
+      - GET: woo-manifest1
+      - GET: woo-ecscluster1
     
   #- name: repo-dcldeploy
    # type: dclDeploy
