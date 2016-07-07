@@ -9,7 +9,7 @@ jobs:
     steps:
       - GET: ugee-img2
       
-  - name: uge2-ecsdeploy
+  - name: ugee1-ecsdeploy
     type: ecsDeploy
     options: 
       deployMethod: upgrade
