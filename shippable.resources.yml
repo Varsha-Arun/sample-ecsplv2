@@ -75,3 +75,8 @@ resources:
     type: replicas
     source:
       count: 3
+      
+  - name: woo-replica0
+    type: replicas
+    source:
+      count: 0
