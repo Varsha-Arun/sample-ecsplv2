@@ -3,11 +3,12 @@ jobs:
     type: manifest
     steps:
       - GET: woo-img1
+      - GET: triggerwoo1
       
-  - name: woo-manifest2
-    type: manifest
-    steps:
-      - GET: woo-img2
+ # - name: woo-manifest2
+  #  type: manifest
+   # steps:
+    #  - GET: woo-img2
       
   - name: woo-ecsdeploy
     type: ecsDeploy
