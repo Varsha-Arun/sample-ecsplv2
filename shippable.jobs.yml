@@ -21,14 +21,6 @@ jobs:
       - GET: ugee-img1
       - GET: ugee-manifest1
       
-  - name: ugee-manifest4
-    type: manifest
-    steps:
-      - GET: ugee-img1
-      - GET: ugee-replica3
-      - GET: ugee-dopt2
-      - GET: triggerthree
-      
   - name: ugee1-ecsdeploy
     type: ecsDeploy
     options: 
@@ -38,14 +30,6 @@ jobs:
       - GET: ugee-param1
       - GET: ugee-dopt1
       - GET: ugee-replica1
-      - GET: ugee-ecscluster1
-      
-  - name: ugerrorhandlingport-ecsdeploy
-    type: ecsDeploy
-    options: 
-      deployMethod: upgrade
-    steps:
-      - GET: ugee-manifest4
       - GET: ugee-ecscluster1
       
   - name: ugemulti-imagemanifestdeploy
