@@ -5,6 +5,12 @@ jobs:
       - GET: woo-img1
       - GET: triggerwoo1
       
+  - name: woo-manifest2
+    type: manifest
+    steps:
+      - GET: woo-img1
+      - GET: triggerwoo2
+      
  # - name: woo-manifest2
   #  type: manifest
    # steps:
@@ -14,6 +20,12 @@ jobs:
     type: ecsDeploy
     steps:
       - GET: woo-manifest1
+      - GET: woo-ecscluster1
+      
+  - name: woo1-ecsdeploy
+    type: ecsDeploy
+    steps:
+      - GET: woo-manifest2
       - GET: woo-ecscluster1
     
   #- name: repo-dcldeploy
