@@ -61,6 +61,11 @@ resources:
       portMappings:
         - 80:3000
         
+  - name: ugee-replica1
+    type: replicas
+    source:
+      count: 1
+        
   - name: ugee-replica2
     type: replicas
     source:
